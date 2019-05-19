@@ -98,15 +98,3 @@ trip_two = Trip.new(guest: john, listing: chicago)
 trip_three = Trip.new(guest:bob, listing: houston)
 trip_four = Trip.new(guest:john, listing: houston)
 trip_five = Trip.new(guest:sarah, listing: houston)
-
-
-p trip_two.listing
-#p Guest.find_all_by_name("John")
- #trip_two.guest.name
-#p Listing.all
-#p Listing.most_popular
-
-# houston.guests
-#p houston.trips
-
-#p Listing.find_all_by_city("Houston")
