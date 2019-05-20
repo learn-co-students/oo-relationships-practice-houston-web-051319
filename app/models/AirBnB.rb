@@ -48,7 +48,7 @@ end
 
 class Listing
   def self.most_popular
-    self.all.max_by {|listings| listings.trip_count}  #takes the all array and compares each listing's trip_count. returns highest count
+    self.all.max_by {|listings| listings.trip_count}  #takes the Listing.all array and compares each listing's trip_count. returns highest count
   end
 
   def self.find_all_by_city(city)
@@ -86,15 +86,3 @@ class Listing
     trip_count.length
   end
 end
-bob = Guest.new("Bob")
-john = Guest.new("John")
-sarah = Guest.new("Sarah")
-
-chicago = Listing.new("Chicago")
-houston = Listing.new("Houston")
-
-trip_one = Trip.new(guest: bob, listing: chicago)
-trip_two = Trip.new(guest: john, listing: chicago)
-trip_three = Trip.new(guest:bob, listing: houston)
-trip_four = Trip.new(guest:john, listing: houston)
-trip_five = Trip.new(guest:sarah, listing: houston)
