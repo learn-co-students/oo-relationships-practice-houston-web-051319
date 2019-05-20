@@ -5,7 +5,11 @@ def reload
 end
 
 #Pry.start
-
+kurt = Actor.new("Kurt Russel")
+lina_headey = Actor.new("Lina Headey")
+will_smith = Actor.new("Will Smith")
+jeff_goldblum = Actor.new("Jeff Goldblum")
+bill_pullman = Actor.new("Bill Pullman")
 independence_day_tv = Show.new("Independence Day")
 full_house = Show.new("Full House")
 got = Show.new("GoT")
@@ -15,16 +19,14 @@ dr_doolittle = Movie.new("Dr. Doolittle")
 bone_tomahawk = Movie.new("Bone Tomahawk")
 cersei = Character.new("Cersei", lina_headey, got)
 cowboy = Character.new("Cowboy", kurt, bone_tomahawk)
-fighter_pilot = Character.new("fighter pilot", will smith, independence_day)
+fighter_pilot = Character.new("fighter pilot", will_smith, independence_day)
+fighter_pilot_two = Character.new("fighter pilot", jeff_goldblum, independence_day)
 indian = Character.new("indian", bill_pullman, bone_tomahawk_tv)
-kurt = Actor.new("Kurt Russel")
-lina_headey = Actor.new("Lina Headey")
-will_smith = Actor.new("Will Smith")
-jeff_goldblum = Actor.new("Jeff Goldblum")
-bill_pullman = Actor.new("Bill Pullman")
+
 
 p bill_pullman
 binding.pry
+p "HELLO"
 
 # bob = Guest.new("Bob")
 # john = Guest.new("John")
